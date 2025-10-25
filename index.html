@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCollect — Gestion durable des déchets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="brand">
+        <div class="logo">EC</div>
+        <div>
+          <h1>EcoCollect</h1>
+          <p>Gestion durable des déchets</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projet">Projet</a>
+        <a href="#impact">Impact</a>
+        <a href="#fonctionnalites">Fonctionnalités</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="intro">
+        <h2>Rendre nos villes plus propres et durables</h2>
+        <p>EcoCollect permet aux citoyens et aux collectivités de gérer les déchets efficacement, réduire leur impact environnemental et participer activement à la protection de la planète.</p>
+        <a href="#fonctionnalites" class="cta">Découvrir les fonctionnalités</a>
+      </div>
+      <div class="hero-img">
+        <img src="Poubelle-tri.jpg.webp" alt="Illustration collecte des déchets">
+      </div>
+    </section>
+
+    <!-- Projet -->
+<section id="projet" class="section">
+    <h3>Le projet</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <h4>📌 Signalement rapide</h4>
+        <p>Signalez facilement les dépôts sauvages et points problématiques.</p>
+      </div>
+      <div class="project-card">
+        <h4>📅 Calendrier intelligent</h4>
+        <p>Recevez des rappels adaptés pour la collecte selon votre adresse.</p>
+      </div>
+      <div class="project-card">
+        <h4>📚 Guides de tri</h4>
+        <p>Apprenez à trier, recycler et réduire vos déchets efficacement.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Impact durable -->
+  <section id="impact" class="section">
+    <h3>Impact durable</h3>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <h4>🌿 Environnemental</h4>
+        <ul>
+          <li>Réduction des dépôts sauvages</li>
+          <li>Augmentation du recyclage</li>
+          <li>Optimisation des tournées pour moins de CO₂</li>
+        </ul>
+      </div>
+      <div class="impact-card">
+        <h4>👥 Social</h4>
+        <ul>
+          <li>Meilleure qualité de vie</li>
+          <li>Sensibilisation et éducation</li>
+          <li>Participation citoyenne</li>
+        </ul>
+      </div>
+      <div class="impact-card">
+        <h4>💰 Économique</h4>
+        <ul>
+          <li>Réduction des coûts municipaux</li>
+          <li>Valorisation des matériaux</li>
+          <li>Création d’emplois locaux</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <!-- Fonctionnalités -->
+    <section id="fonctionnalites" class="section">
+      <h3>Fonctionnalités</h3>
+      <div class="features-grid">
+        <div class="card feature-card">
+          <h4>📌 Signalement facile</h4>
+          <p>Localiser le point et envoyer une alerte à la municipalité.</p>
+          <button class="cta" onclick="openModal('signalement')">Signaler</button>
+        </div>
+        <div class="card feature-card">
+          <h4>📅 Calendrier intelligent</h4>
+          <p>Rappels de collecte selon votre adresse et type de déchets.</p>
+          <button class="cta" onclick="openModal('calendrier')">Calandrier</button>
+        </div>
+        <div class="card feature-card">
+          <h4>📚 Guides & Ressources</h4>
+          <p>Fiches pratiques pour trier, réduire et réutiliser.</p>
+          <button class="cta" onclick="openModal('guides')">Guides</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Modals -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="card">
+        <h3>Contact / Prototype</h3>
+        <p>Envoyez vos idées ou testez la maquette :</p>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input id="name" placeholder="Votre nom">
+            <input id="email" placeholder="Email">
+          </div>
+          <textarea id="message" placeholder="Votre message / signalement"></textarea>
+          <button type="submit" class="cta">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 EcoCollect — Site dédié au développement durable et à la gestion des déchets
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
